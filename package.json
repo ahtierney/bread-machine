@@ -1,0 +1,31 @@
+{
+  "name": "bread-machine",
+  "version": "1.0.0",
+  "description": "check flour availability",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahtierney/bread-machine"
+  },
+  "scripts": {
+    "build": "babel 'src/**/*.js' -d dist",
+    "start": "npm run build && node dist/index.js",
+    "lint": "eslint src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adam Tierney",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/polyfill": "^7.7.0",
+    "axios": "^0.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "puppeteer": "^3.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/node": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "eslint": "^7.2.0"
+  }
+}
